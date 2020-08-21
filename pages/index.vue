@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Benvenuto in Giretta B&B
+        Benvenuto in Giretta Bed and Breaksfast
       </h1>
       <div class="links">
         <a
