@@ -1,9 +1,17 @@
 <template>
   <div>
-    <Nuxt />
+    <nuxt-link v-for="lingua in lingueDisponibili" :key="lingua.code" :to="switchLocalePath(lingua.code)"> {{lingua.name}}</nuxt-link>
   </div>
 </template>
-
+<script>
+export default {
+  computed: {
+    lingueDisponibili() {
+      return this.$i18n.locales.filter(i => i.code!==this.$i18n.locale);
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family:
