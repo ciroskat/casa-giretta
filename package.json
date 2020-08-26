@@ -14,7 +14,7 @@
     "nuxt-i18n": "^6.13.12"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.0",
+    "@nuxt/types": "^2.14.3",
     "@nuxt/typescript-build": "^2.0.2"
   }
 }

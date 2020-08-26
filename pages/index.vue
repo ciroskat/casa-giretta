@@ -3,8 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Benvenuto in Giretta Bed and Breaksfast
-      </h1>
+        Benvenuto</h1>
       <h1>{{$t('hero.title')}}</h1>
       <h2>Lingua corrente  {{$i18n.locale}}</h2>
       
