@@ -1,40 +1,23 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Benvenuto</h1>
-      <h1>{{$t('hero.title')}}</h1>
-      <h2>Lingua corrente  {{$i18n.locale}}</h2>
-      
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Accedi
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Iscriviti
-        </a>
-      </div>
-    </div>
+  <div id="app">
+    {{ message }}
   </div>
+
+</div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
-export default Vue.extend({})
-
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
 </script>
+
 
 
 <style>

@@ -1,8 +1,7 @@
 <template>
   <div>
     <Nuxt />
-    ciao
-    <nuxt-link v-for="lingua in lingueDisponibili" :key="lingua.code" :to="switchLocalePath(lingua.code)"> {{lingua.name}}</nuxt-link>
+    <h1><nuxt-link v-for="lingua in lingueDisponibili" :key="lingua.code" :to="switchLocalePath(lingua.code)"> {{lingua.name}}</nuxt-link></h1>
   </div>
 </template>
 <script>
