@@ -1,72 +1,61 @@
 <template>
-
-  <div class="container">
-    <div id='app'>
+  <section class="container">
+    <div>
       <logo/>
       <h1 class="title">
-        {{title}} in Bed and Breaksfast
+        Nuxt.js tutorial
       </h1>
-      <h2>Lingua corrente  {{$i18n.locale}}</h2>
-      <no-ssr><div>dimensione corrente {{ $mq }}</div></no-ssr>
-   
+      <h2 class="subtitle">
+        Esempio di progetto Web costruito con Nuxt.js
+      </h2>
+      <h1 class="title">{{ title }} in Bed and Breaksfast</h1>
+      <h2>Lingua corrente {{ $i18n.locale }}</h2>
+      <div>dimensione corrente {{ $mq }}</div>	  
+      <div class="links">
+        <nuxt-link to="/prodotti"  class="button--green">Prodotti</nuxt-link>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-
-</script>
-
 <script>
- new Vue({
-   el: '#app',
-   data: {
-     title: 'bevenuto'
-   }
- })
+import Logo from '~/components/Logo.vue'
+
+export default {
+  components: {
+    Logo
+  }
+}
 </script>
 
-
-<style>
-.container {
-  margin: 0 auto;
+<style scoped>
+.container
+{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+.title
+{
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
-
-.subtitle {
+.subtitle
+{
   font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-
-.links {
+.links
+{
   padding-top: 15px;
 }
 </style>

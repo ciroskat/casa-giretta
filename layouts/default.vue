@@ -6,13 +6,18 @@
 </template>
 
 <script>
+
 export default {
+   head: {
+    title: 'Giretta B&B'
+  },
   computed: {
     lingueDisponibili() {
       return this.$i18n.locales.filter(i => i.code!==this.$i18n.locale);
     }
   }
 }
+
 </script>
 
 <style>
