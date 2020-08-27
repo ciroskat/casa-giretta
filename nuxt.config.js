@@ -35,6 +35,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    {src : '~/plugins/vueMq', ssr : false}
   ],
   /*
   ** Auto import components
@@ -51,6 +52,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/gtm',
     ['nuxt-i18n',{
       locales : [
         {
@@ -71,6 +73,9 @@ export default {
       defaultLocale: 'it'
     }]
   ],
+  gtm: {
+    id: 'GTM-5MKHCCH'
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

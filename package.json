@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxtjs/gtm": "^2.3.2",
     "nuxt": "^2.14.0",
-    "nuxt-i18n": "^6.13.12"
+    "nuxt-i18n": "^6.13.12",
+    "vue-mq": "^1.0.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

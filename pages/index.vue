@@ -1,31 +1,14 @@
 <template>
+
   <div class="container">
     <div>
-      <Logo />
+      <logo/>
       <h1 class="title">
         Benvenuto in Giretta Bed and Breaksfast
       </h1>
-      <h1>{{$t('hero.title')}}</h1>
       <h2>Lingua corrente  {{$i18n.locale}}</h2>
-      
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Accedi
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Iscriviti
-        </a>
-      </div>
+      <div>dimensione corrente {{$mq}}</div>
+   
     </div>
   </div>
 </template>
