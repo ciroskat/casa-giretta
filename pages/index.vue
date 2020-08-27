@@ -1,13 +1,13 @@
 <template>
 
   <div class="container">
-    <div>
+    <div id='app'>
       <logo/>
       <h1 class="title">
-        Benvenuto in Giretta Bed and Breaksfast
+        {{title}} in Bed and Breaksfast
       </h1>
       <h2>Lingua corrente  {{$i18n.locale}}</h2>
-      <div>dimensione corrente {{$mq}}</div>
+      <no-ssr><div>dimensione corrente {{ $mq }}</div></no-ssr>
    
     </div>
   </div>
@@ -18,6 +18,15 @@ import Vue from 'vue'
 
 export default Vue.extend({})
 
+</script>
+
+<script>
+ new Vue({
+   el: '#app',
+   data: {
+     title: 'bevenuto'
+   }
+ })
 </script>
 
 
