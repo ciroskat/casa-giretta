@@ -13,10 +13,7 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <nuxt-link
-                :to="{ name: 'prodotto-slug', params: { slug: product.slug } }"
-                >{{ product.name }}</nuxt-link
-              >
+              <nuxt-link :to="{ name: 'prodotto-id', params: { id: product.slug } }">{{ product.name }}</nuxt-link>
               <small> €{{ product.price }}</small>
               <br />
               {{ product.description }}
