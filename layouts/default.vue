@@ -9,7 +9,7 @@
 
 export default {
    head: {
-    title: 'Giretta B&B'
+    title: 'Giretta BBBBBB&B'
   },
   computed: {
     lingueDisponibili() {
